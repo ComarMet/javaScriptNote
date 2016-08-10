@@ -14,6 +14,7 @@ currentstyle 集合
 
 insertBefore  元素插入
 append child 元素追加
+
 元素追加 让第一个发的内容排在第一个
 	<body>
 	<input type="text"  id="text"/>	
@@ -39,8 +40,7 @@ append child 元素追加
 				oUl.appendChild(oli);
 			}else {
 				oUl.insertBefore(oli,ali[0]);
-		}
-				
+		}			
 	}
 
 }
