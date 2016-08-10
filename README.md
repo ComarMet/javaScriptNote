@@ -16,32 +16,26 @@ insertBefore  元素插入
 append child 元素追加
 
 元素追加 让第一个发的内容排在第一个
-	<body>
-	<input type="text"  id="text"/>	
-	<input type="button" value="添加" id="btn" />
-	
-	<ul id="uill">
-	
-	</ul>
-		
-	</body>
-	window.onload = function () {
-			var oBtn = document.getElementById('btn');
-			var oText = document.getElementById('text')
-			var oUl = document.getElementById('uill')
-			
-			oBtn.onclick = function (){
-				
-				var oli = document.createElement('li');
-				var ali  = document.getElementsByTagName('li');
-
-				oli.innerHTML = oText.value;
-			if(ali.length==0){
-				oUl.appendChild(oli);
+<body>
+     <input type="text"  id="text"/>	
+     <input type="button" value="添加" id="btn" />
+     <ul id="uill"></ul>
+</body>
+     window.onload = function () {
+	var oBtn = document.getElementById('btn');
+	var oText = document.getElementById('text')
+	var oUl = document.getElementById('uill')
+	oBtn.onclick = function (){
+		var oli = document.createElement('li');
+		var ali  = document.getElementsByTagName('li');
+		oli.innerHTML = oText.value;
+		if(ali.length==0){
+			oUl.appendChild(oli);
 			}else {
 				oUl.insertBefore(oli,ali[0]);
-		}			
-	}
+				}			
+		}
+	｝
 
 }
 			
